@@ -136,6 +136,11 @@ body{
   max-width: 500px;
 }
 
+.marker_content{
+  display: flex;
+  justify-content: space-between
+}
+
 .content_link {
   display: flex;
   align-items: center;
@@ -164,6 +169,21 @@ body{
   margin: 10px;
 }
 
+.input{
+  padding: 11px 0px 7px 8px;
+    border-radius: 5px;
+    border-style: hidden;
+    height: 10px;
+    width: 400px;
+    background-color: #01153a;
+    border: 1px solid white;
+}
+
+.text_input{
+  color: white;
+  margin-top: 20px;
+}
+
 .gallery_rigth{
   display: flex;
 }
@@ -176,4 +196,25 @@ body{
 .img_contact{
   max-width: 450px;
   height: 300px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.footer_raigth{
+  display: flex;
+  
+}
+.img_footer {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.sub_footer_redes {
+  display: flex;
+  margin-right: 150px;
 }
