@@ -1,0 +1,179 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: #01153a;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+ 
+
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.conten_header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: space-between;
+  /* max-width: 40%; */
+  width: 55%;
+}
+
+.conten_header .logo{
+  width: 100px;
+  height: 70px;
+}
+
+.conten_header .menu{
+  display: flex;
+}
+
+ .menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.menu a:hover{
+  color: red;
+}
+
+.content_link {
+  display: flex;
+  align-items: center;
+}
+
+.content_link a{
+  text-decoration: none;
+  color: white;
+  height: 52px;
+  width: 120px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.banner{
+  width: 100%;
+  height: 500px;
+  z-index: 100;
+  background-image: url("../assets/estadio.jpg");
+  /* background: rgba(0, 0, 0, .9) */
+}
+
+.banner .banner_container{
+  padding: 45px;
+  display: flex;
+}
+
+.person_1{
+  max-width: 300px;
+  height: -webkit-fill-available;
+  border: 6px solid white
+}
+
+.person_2{
+  max-width: 100%;
+    height: 416px;
+}
+
+ .content_text{
+  display: flex;
+  max-width: 300px;
+  padding: 25px;
+  align-items: center;
+}
+
+.text{
+  color: white;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.marker{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date{
+  color: white;
+  margin: 20px 0 20px 0;
+}
+
+.subtitle{
+  color: white;
+  margin: 20px 0 20px 0;
+}
+
+.flecha{
+  max-width: 80px;
+  height: 50px;
+}
+
+.table{
+  max-width: 400px;
+  height: auto;
+}
+
+.marker_left{
+  max-width: 500px;
+}
+
+.content_link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.link_left{
+  display: flex;
+}
+
+.link_rigth{
+  display: flex;
+}
+
+.content_left_img{
+  max-width: 400px;
+  height: 320px;
+  border-radius: 7px;
+}
+
+.content_rigth_img{
+  max-width: 250px;
+  height: auto;
+  border-radius: 7px;
+  margin: 10px;
+}
+
+.gallery_rigth{
+  display: flex;
+}
+
+.gallery_images{
+  justify-content: space-between;
+  display: flex;
+}
+
+.img_contact{
+  max-width: 450px;
+  height: 300px;
+}
