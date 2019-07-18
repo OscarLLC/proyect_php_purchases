@@ -6,12 +6,43 @@
 body{
   background-color: #01153a;
 }
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?g02diz');
+  src:  url('../fonts/icomoon.eot?g02diz#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?g02diz') format('truetype'),
+    url('../fonts/icomoon.woff?g02diz') format('woff'),
+    url('../fonts/icomoon.svg?g02diz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrows:before {
+  content: "\e900";
+  color: white;
+  margin-left: 15px;  
+}
+
+
 
 .container{
   width: 80%;
   margin: auto;
- 
-
 }
 
 .header{
@@ -25,7 +56,12 @@ body{
   align-items: center;
   justify-content: space-between;
   /* max-width: 40%; */
-  width: 55%;
+  /* max-width: 75%; */
+
+}
+
+.conten_header .menu{
+  margin-left: 75px;
 }
 
 .conten_header .logo{
@@ -42,13 +78,13 @@ body{
   display: flex;
 }
 
-.menu a{
+.menu .nav_a{
   text-decoration: none;
   color: white;
   margin: 10px;
 }
 
-.menu a:hover{
+.conten_header ul li .nav_a:hover{
   color: red;
 }
 
@@ -57,7 +93,7 @@ body{
   align-items: center;
 }
 
-.content_link a{
+.content_link .a_content_link{
   text-decoration: none;
   color: white;
   height: 52px;
@@ -69,10 +105,20 @@ body{
   border-radius: 10px;
 }
 
+.link_left .a_marker{
+  text-decoration: none;
+    color: red;
+}
+
+.link_rigth .a_marker{
+  text-decoration: none;
+    color: red;
+}
+
 .banner{
   width: 100%;
   height: 500px;
-  z-index: 100;
+ position: relative;
   background-image: url("../assets/estadio.jpg");
   /* background: rgba(0, 0, 0, .9) */
 }
@@ -102,12 +148,13 @@ body{
 
 .text{
   color: white;
-  line-height: 25px;
-  letter-spacing: 1px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
 }
 
 .marker{
-  margin-top: 60px;
+  margin-top: 90px;
   display: flex;
   justify-content: space-between;
 }
@@ -115,11 +162,21 @@ body{
 .date{
   color: white;
   margin: 20px 0 20px 0;
+  
+}
+
+.date small {
+  font-size: 10px;
 }
 
 .subtitle{
   color: white;
   margin: 20px 0 20px 0;
+  font-size: 27px;
+}
+
+.content_link .a_table{
+  color: yellow;    
 }
 
 .flecha{
@@ -156,6 +213,14 @@ body{
   display: flex;
 }
 
+.contact_left{
+  max-width: 45%;
+}
+
+ .contact_raigth{
+  max-width: 45%;
+}
+
 .content_left_img{
   max-width: 400px;
   height: 320px;
@@ -169,14 +234,37 @@ body{
   margin: 10px;
 }
 
+.form{
+  margin-top: 40px;
+}
+
 .input{
   padding: 11px 0px 7px 8px;
-    border-radius: 5px;
-    border-style: hidden;
-    height: 10px;
-    width: 400px;
-    background-color: #01153a;
-    border: 1px solid white;
+  border-radius: 5px;
+  margin: 0 0 17px 0;
+  border-style: hidden;
+  height: 20px;
+  width: 100%;
+  background-color: #01153a;
+  border: 1px solid white;
+}
+
+.button_form{
+  text-decoration: none;
+  color: white;
+  height: 52px;
+  width: 120px;
+  margin-top: 20px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.button_form .button_a{
+  text-decoration: none;
+  color: white;
 }
 
 .text_input{
@@ -194,27 +282,73 @@ body{
 }
 
 .img_contact{
-  max-width: 450px;
-  height: 300px;
+  position: relative;
+  height: 225px;
+  width: 100%;
+  object-fit: cover;
+  z-index: 5;
+}
+
+.hola{
+  position: absolute;
+ top: -80px;
+ z-index: 10;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
+  border-top: 1px solid white;
+}
+
+.footer_left p small{
+  color: white;
+}
+
+.footer_left{
+  margin-top: 40px;
 }
 
 .footer_raigth{
   display: flex;
+  margin-top: 40px;
   
 }
 .img_footer {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  background-color: wheat;
+  border-radius: 50%;
+
 }
 
 .sub_footer_redes {
   display: flex;
-  margin-right: 150px;
+  margin-right: 50px;
+}
+
+
+.sub_footer_content p{
+  color: white;
+}
+@media screen and (max-width: 1024px){
+  
+}
+
+@media screen and (max-width: 950px){
+  
+}
+
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 467px){
+
+}
+
+@media screen and (max-width: 320px){
+
 }
