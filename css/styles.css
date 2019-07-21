@@ -93,7 +93,13 @@ body{
   align-items: center;
 }
 
-.content_link .a_content_link{
+.content_link_header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_link_header .a_content_link{
   text-decoration: none;
   color: white;
   height: 52px;
@@ -497,6 +503,10 @@ span{
   .description_top{
     width: 100%;
   }
+  .content_link_header{
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 767px){
@@ -552,12 +562,13 @@ span{
  }
  .conten_header{
    display: block;
- }
- .container{
    text-align: center;
  }
+ .container{
+   
+ }
  .content_link{
-   justify-content: center;
+   justify-content: space-between;
  }
 }
 
